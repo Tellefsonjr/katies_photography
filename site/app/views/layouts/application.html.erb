@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+
+<script src="https://unpkg.com/react@15/dist/react-with-addons.js"></script>
+  </head>
+
+  <body class="rgba-secondary-2-1-bg">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top" style="font-family: 'Allura', cursive">KatieEllefson Photography</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <%= yield %>
+  </body>
+</html>

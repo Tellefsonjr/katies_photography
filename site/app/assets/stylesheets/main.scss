@@ -1,0 +1,48 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#title a{
+  text-decoration: none;
+  text-shadow: 1px 1px rgba( 66,129,129,1);
+}
+.underline, .overline {
+	background-color: white; /* same as link color */
+	display: block;
+	height: 2px;
+	width: 100%;
+	padding: 0;
+  -webkit-transform: scaleX(0) translateY(0px);
+	transform: scaleX(0) translateY(0px);
+  -webkit-transition: all 0.2s ease-in;
+	transition: all 0.20s ease-in;
+}
+#title:hover a{
+  color: rgba(155,194,194,1) !important;
+}
+#title:hover .underline{
+  -webkit-transform: scaleX(1) translateY(-10px);
+	transform: scaleX(1) translateY(-10px);
+}
+#title:hover .overline{
+  -webkit-transform: scaleX(1) translateY(10px);
+  transform: scaleX(1) translateY(10px);
+}
+.transparent{
+  background-image: none !important;
+}
+.rgba-primary-4-bg { background-color: rgba( 34,102,102,.2) !important; border-color:rgba( 34,102,102,.2) !important;}
+
+.gallery-appear{
+  opacity: 0;
+}
+.gallery-appear-active {
+  opacity: 1;
+  transition: opacity 380ms ease-in;
+}
+
+//gallery
+#gallery{
+  margin-top: 15%;
+  background-color: white;
+}
