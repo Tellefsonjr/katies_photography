@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<h1>Appointments</h1>
+
+
+    <%= month_calendar events: @appointments do |date, appointments| %>
+    <%= date %>
+
+  <% appointments.each do |appointment| %>
+    <div>
+      <%= appointment.userName %>
+    </div>
+  <% end %>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New Appointment', new_appointment_path %>

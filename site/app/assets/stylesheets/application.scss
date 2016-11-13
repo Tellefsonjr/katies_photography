@@ -13,22 +13,15 @@
  *= require_tree .
  *= require_self
  *= require bootstrap
+ *= require simple_calendar
  */
  /* As RGBa codes */
  body {
    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
    background-image: url("http://www.magic4walls.com/wp-content/uploads/2014/03/fence-summer-photo-city-bokeh-lights-macro-hd-wallpaper.jpg");
-   
- }
- @-webkit-keyframes backgroundScroll {
- from {background-position: 0 0; background-image: currentColor;}
- to {background-position: -500px 0; background-image: transparent;}
+   box-shadow: inset 0px 0px 60px 20px black;
  }
 
- @keyframes backgroundScroll {
- from {background-position: 0 0; background-image: currentColor}
- to {background-position: -500px 0; background-image: transparent;}
- }
  body {
      float: left;
      padding: 0;
@@ -36,9 +29,6 @@
      color:#fff !important;
  	min-height:641px;
   animation: background-image 0.5s ease-in-out;
- 	-webkit-animation: backgroundScroll 50s linear infinite;
- animation: backgroundScroll 50s linear infinite;
-
  background-size:150% 100%;
  	background-position:top;
  	background-attachment:fixed;

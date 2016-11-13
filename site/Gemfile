@@ -12,6 +12,9 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 #bootstrap
 gem 'bootstrap'
+#Simple Calendar to render calendars
+gem 'simple_calendar'
+
 gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
