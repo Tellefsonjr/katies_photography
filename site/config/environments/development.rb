@@ -53,6 +53,6 @@ Rails.application.configure do
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   #Environment Variables for OmniAuth facebook
-  ENV['FACEBOOK_APP_ID'] = "1845594798987869"
-  ENV['FACEBOOK_SECRET'] = "fc769f4883fd2d50beca5d05f22e3638"
+  ENV['FACEBOOK_APP_ID'] = Rails.application.secrets.FACEBOOK_APP_ID
+  ENV['FACEBOOK_SECRET'] = Rails.application.secrets.FACEBOOK_SECRET
 end
