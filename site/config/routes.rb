@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'sessions_controller/create'
+
+  get 'sessions_controller/destroy'
+
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
   resources :appointments
   get 'appointments' => "appointments#index"
 

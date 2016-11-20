@@ -10,3 +10,15 @@ thead{
 .table{
   color:black;
 }
+thead:first-child{
+  border-top-left-radius: 5px;
+}
+.calendar-title{
+  font-size: 16pt;
+  text-align:center;
+  color: white;
+}
+.calendar-container{
+  background-color: rgb(64,64,64);
+  border-radius: 5px;
+}

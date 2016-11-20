@@ -19,6 +19,7 @@
 }
 #title:hover a{
   color: rgba(155,194,194,1) !important;
+  background-color: transparent;
 }
 #title:hover .underline{
   -webkit-transform: scaleX(1) translateY(-10px);
@@ -43,23 +44,23 @@
 
 //gallery
 #gallery{
-  margin-top: 15%;
+  margin-top: 10%;
   background-color: transparent;
 }
 .gallery-image{
-  height: 210px;
-  width: 270px;
+  height: 300px;
+  width: 100%;
   background-color:white;
   padding-top: 10px;
   border-radius: 2px;
   filter: grayscale(100%);
+  transform: scale(.85);
   transition: all .15s ease-in;
   -webkit-transform: all .15s ease-in;
 }
 .gallery-image:hover{
   z-index: 1;
-  height:360px;
-  width:420px;
+  transform: scale(1);
   box-shadow: 0px 8px 15px 6px black;
   filter: grayscale(0%);
 }

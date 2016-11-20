@@ -14,6 +14,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap'
 #Simple Calendar to render calendars
 gem 'simple_calendar'
+#Font-Awesome Icons
+gem 'font-awesome-sass'
+#OmniAuth-Facebook
+gem 'omniauth-facebook'
 
 gem 'autoprefixer-rails'
 # Use Uglifier as compressor for JavaScript assets

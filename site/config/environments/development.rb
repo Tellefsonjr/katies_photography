@@ -51,4 +51,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  #Environment Variables for OmniAuth facebook
+  ENV['FACEBOOK_APP_ID'] = "1845594798987869"
+  ENV['FACEBOOK_SECRET'] = "fc769f4883fd2d50beca5d05f22e3638"
 end

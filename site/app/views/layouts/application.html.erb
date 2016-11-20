@@ -13,14 +13,14 @@
   </head>
 
   <body class="rgba-secondary-2-1-bg">
-    <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top" style="font-family: 'Allura', cursive">KatieEllefson Photography</a>
+                <a class="navbar-brand" href="/" style="font-family: 'Allura', cursive">KatieEllefson Photography</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,11 +39,25 @@
                         <a class="" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="" href="/appointments/index">Appointments</a>
+                      <a class="" href="#contact">Contact</a>
+                    </li>
+                    <% if current_user %>
+                    <li>
+                      <a class="" href="/appointments"><i class="fa fa-calendar" aria-hidden="true"> </i> My Appointments</a>
                     </li>
                     <li>
-                        <a class="" href="#contact">Contact</a>
+                      <p class="navbar-text"><%= current_user.name %></p>
                     </li>
+                    <li>
+                      <%= link_to "Sign out", signout_path, id: "sign_out" %>
+                    </li>
+                    <% else %>
+                    <li>
+                      <a class="btn btn-block btn-social btn-facebook" href="/auth/facebook">
+                        <span class="fa fa-facebook"></span> Sign in with Facebook
+                      </a>
+                    </li>
+                    <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -13,25 +13,24 @@
  *= require_tree .
  *= require_self
  *= require bootstrap
+ *= require bootstrap-social
  *= require simple_calendar
  */
  /* As RGBa codes */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+html, body{
+   min-height:100%;
+   min-width:100%;
+ }
  body {
    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
    background-image: url("http://www.magic4walls.com/wp-content/uploads/2014/03/fence-summer-photo-city-bokeh-lights-macro-hd-wallpaper.jpg");
-   box-shadow: inset 0px 0px 60px 20px black;
- }
-
- body {
-     float: left;
-     padding: 0;
-     width: 100%;
-     color:#fff !important;
- 	min-height:641px;
-  animation: background-image 0.5s ease-in-out;
- background-size:150% 100%;
- 	background-position:top;
- 	background-attachment:fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   box-shadow: inset 0px 56px 60px 20px black;
+   padding-bottom: 200px;
 
  }
 .btn-primary{
@@ -53,6 +52,12 @@
 .nav > li, a:hover{
   color: rgba(155,194,194,1) !important;
 }
+.btn-social{
+  margin-top:7px;
+  padding: 6px 15px !important;
+  padding-left:46px !important;
+}
+
  .rgba-primary-0 { color: rgba(102,153,153,1) }	/* Main Primary color */
  .rgba-primary-1 { color: rgba(207,228,228,1) }
  .rgba-primary-2 { color: rgba(155,194,194,1) }
