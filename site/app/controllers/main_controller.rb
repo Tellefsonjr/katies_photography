@@ -5,4 +5,8 @@ class MainController < ApplicationController
   def appointments
 
   end
+
+  def contact
+    
+  end
 end
