@@ -10,17 +10,18 @@
       <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
 
 <script src="https://unpkg.com/react@15/dist/react-with-addons.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
   </head>
 
-  <body class="rgba-secondary-2-1-bg">
-      <nav class="navbar navbar-inverse">
+  <body class="rgba-secondary-2-1-bg" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/" style="font-family: 'Allura', cursive">KatieEllefson Photography</a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-family: 'Allura', cursive">KatieMarie Photography</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,20 +31,20 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="" href="#about">About</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                      <a class="" href="/contact">Contact</a>
+                      <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <% if current_user %>
                     <li>
-                      <a class="" href="/appointments"><i class="fa fa-calendar" aria-hidden="true"> </i> My Appointments</a>
+                      <a class="page-scroll" href="/appointments"><i class="fa fa-calendar" aria-hidden="true"> </i> My Appointments</a>
                     </li>
                     <li>
                       <p class="navbar-text"><%= current_user.name %></p>

@@ -1,5 +1,5 @@
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
-var PrettyGallery = React.createClass({
+var Gallery = React.createClass({
 
   render: function() {
           return (
