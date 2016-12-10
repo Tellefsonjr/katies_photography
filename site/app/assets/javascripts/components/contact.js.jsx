@@ -5,7 +5,7 @@ var Contact = React.createClass({
 
   render: function() {
     return(
-      <div id="ContactForm" className="well well-lg">
+      <div id="ContactForm" className="">
         <div className="text-center">
           <h1 className="page-header">
             Contact Me
@@ -35,7 +35,9 @@ var Contact = React.createClass({
           </div>
           <div className="col-md-5 col-md-push-1">
             <h2 className="page-header"> Email me </h2>
-            <small> In progress, info will auto pop login from FB User login What info we need here </small>
+            <small> In progress, info will auto pop login From Facebook User login What info we need here </small>
+            <p>So, If people want to be boring, they can just send you an email here! when you book their appointment In your Google Calendar it will automatically
+            remove that date From the available times In the Appointment helper!</p>
           </div>
 
       </div>
